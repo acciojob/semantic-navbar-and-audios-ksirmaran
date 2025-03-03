@@ -1,30 +1,109 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-   <title>jai shree ram</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navigation Bar & Audio Section</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #f4a261;
+        }
+
+        /* Audio Section */
+        .audio-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .audio-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .audio-track {
+            margin: 15px 0;
+        }
+    </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATVUVtEmnUjgNuJKbJZaVocttJoyLee8n3w&s"alt  ="https://gaana.com/playlist/shahadathossen-aghbh-allsongonly">Audio </a>
-            </li>
-            <li>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorfCMWHdtU2Ft7mXXZMo6FR0Hs5xENfG2eQ&s" alt ="https://gaana.com/playlist/shahadathossen-aghbh-allsongonly">Audio 1</a>
-            </li>
-            <li>
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPtdkfAKYhpYCyurpN_a-hh4sRTd0wh0N8cQ&s" alt ="https://music.youtube.com/watch?v=U6OI0kWksIU&si=CHd8u7jLtbIw0Azc">Audio 3</a>
-            </li>
-  
-	 </ul>
-    </nav>
 
-    <script type="text/javascript" src="./script.js"></script>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Audio Section -->
+    <section class="audio-section">
+        <h2>3 random audios</h2>
+        <div class="audio-track">
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-track">
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-track">
+            <audio controls>
+                <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
 
 </body>
-
 </html>
